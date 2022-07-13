@@ -1,7 +1,5 @@
-body{
-  font-family: Monaco, "Lucida Console", monospace;
-  margin:0;
-  padding:0;
-
-
+@import url('./styles/reset.scss');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+*{
+  font-family: 'Mukta', sans-serif;
 }

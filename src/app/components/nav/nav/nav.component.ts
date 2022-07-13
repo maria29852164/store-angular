@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
+  activeMenu:boolean = false
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showMenu(){
+    this.activeMenu = !this.activeMenu;
+
   }
 
 }

@@ -1,6 +1,6 @@
 <div class="mobile-menu">
   <div>
-    <button>
+    <button (click)="showMenu()">
       <img src="./assets/svg/icon_menu.svg" alt="">
     </button>
     <a href="">
@@ -9,6 +9,22 @@
     <a href="">
       <img src="./assets/svg/icon_shopping_cart.svg" alt="">
     </a>
+  </div>
+  <div class="menu" [class.active]="activeMenu">
+    <button (click)="showMenu()">
+      <img src="./assets/svg/close.png"  alt="">
+    </button>
+    <ul>
+      <li>
+        <a class="active" href="">All</a>
+      </li>
+      <li>
+        <a href="">Clothes</a>
+      </li>
+      <li>
+        <a href="">Electronics</a>
+      </li>
+    </ul>
   </div>
 
 </div>
