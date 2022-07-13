@@ -1,0 +1,108 @@
+.mobile-menu{
+  display: block;
+  box-shadow: 0px 2px 5px rgb(black,.2);
+  >div{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+  button{
+    border:0;
+    background: transparent;
+  }
+
+}
+.web-menu{
+  display: block;
+  box-shadow: 0px 2px 5px rgb(black,.2);
+  >div{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    margin-right: 1em;
+  }
+  nav{
+    display: flex;
+
+    align-items: center;
+    ul{
+
+      display: flex;
+      list-style: none;
+
+
+      li{
+
+        margin-left:1rem;
+        margin-right: 1rem;
+        .active{
+           padding: 10px;
+
+           border: 2px solid #777777;
+
+          border-radius: 10px;
+          color: #777777;
+          background-color: whitesmoke;
+
+        }
+        a{
+          padding: 10px;
+          display: block;
+          color: #777777;
+          text-decoration: none;
+
+
+        }
+
+
+
+
+      }
+    }
+  }
+  .info{
+    display: flex;
+    align-items: center;
+    color:#777777;
+    .account {
+      margin-right: 2em;
+    }
+  }
+
+
+}
+
+
+// media queries
+@media screen and (min-width: 1em) and (max-width: 39em) {
+  .mobile-menu {
+    display: block;
+  }
+  .web-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .mobile-menu {
+    display: none;
+  }
+  .web-menu {
+    display: block;
+  }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .mobile-menu {
+    display: none;
+  }
+  .web-menu {
+    display: block;
+  }
+}

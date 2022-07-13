@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-body">
+
+
+    <app-img [img]="product.img"></app-img>
+
+  </div>
+  <div class="card-title">
+    <div class="product-content">
+      <h3>{{product.name}}</h3>
+      <p>Price: {{product.price}}$</p>
+
+    </div>
+    <hr>
+
+    <div class="card-description" *ngIf="product.description">
+
+      <p >
+        {{product.description}}
+      </p>
+    </div>
+
+
+
+  </div>
+
+
+
+
+</div>
