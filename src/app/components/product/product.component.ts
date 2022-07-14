@@ -20,6 +20,8 @@ export class ProductComponent implements OnInit, OnChanges, AfterViewInit, OnDes
   @Input('product') product!: Product;
 
   @Output() addCard = new EventEmitter<Product>();
+  date: Date = new Date();
+  title ='maria de los angeles'
 
 
   constructor() {

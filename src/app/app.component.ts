@@ -13,6 +13,7 @@ export class AppComponent implements OnChanges {
   parentImg: string = './assets/images/mushu.jpeg';
   showImg:boolean = true;
   counterParent:number=0;
+  titile = 'Maria de los angeles'
 
   products: Product[] = [
     {

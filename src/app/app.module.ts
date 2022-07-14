@@ -9,15 +9,21 @@ import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
 import { NavComponent } from './components/nav/nav/nav.component';
 import {HttpClientModule} from "@angular/common/http";
+import {ReversePipe} from "./pipes/reverse.pipe";
+import { TimeAgoutPipe } from './pipes/time-agout.pipe';
+import { NumberCharacterPipe } from './pipes/number-character.pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ImgComponent,
-    ProductComponent,
-    ProductsComponent,
-    NavComponent
-  ],
+    declarations: [
+        AppComponent,
+        ImgComponent,
+        ProductComponent,
+        ProductsComponent,
+        NavComponent,
+        ReversePipe,
+        TimeAgoutPipe,
+        NumberCharacterPipe
+    ],
     imports: [
         BrowserModule,
         AppRoutingModule,

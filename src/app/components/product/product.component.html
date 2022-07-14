@@ -7,9 +7,12 @@
   </div>
   <div class="card-title">
     <div class="product-content">
-      <h3>{{product.title}}</h3>
+      <h3>{{product.title | reverse}}</h3>
       <br>
-      <p>Price: {{product.price}}$</p>
+      <p>Price: {{product.price | currency:'$'}}</p>
+      <p>Date: {{date | date: 'short'}}</p>
+
+      <p>Time Ago: {{date | timeAgout}}</p>
 
     </div>
     <hr>
