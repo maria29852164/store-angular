@@ -22,7 +22,6 @@ export class NumberCharacterPipe implements PipeTransform {
 
    // @ts-ignore
     let responseConvert=value.split('').reduce((response:string,letter:string) => {
-     // let  response: [];
      for(let property in this.valuesCharacters) {
        if(letter == property){
         // @ts-ignore
