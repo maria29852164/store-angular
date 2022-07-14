@@ -16,21 +16,21 @@ export class AppComponent implements OnChanges {
 
   products: Product[] = [
     {
-      name: "Mushu",
+      title: "Mushu",
       price: 10,
-      img:'./assets/images/mushu.jpeg',
+      image:'./assets/images/mushu.jpeg',
       description:'paja de mushu'
     },
     {
-      name: "Mulan",
+      title: "Mulan",
       price: 30,
-      img:'./assets/images/mulan.jpg',
+      image:'./assets/images/mulan.jpg',
       description:'princesa de disney mulan'
     },
     {
-      name: "Grillo",
+      title: "Grillo",
       price: 5,
-      img:'./assets/images/grillo.png',
+      image:'./assets/images/grillo.png',
       description:'grillo de la suerte'
     }
   ];

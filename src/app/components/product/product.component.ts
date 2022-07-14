@@ -1,4 +1,14 @@
-import {AfterViewInit, Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges} from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+  Output,
+  SimpleChanges
+} from '@angular/core';
 import {Product} from "../../interfaces/product";
 
 @Component({
@@ -8,6 +18,8 @@ import {Product} from "../../interfaces/product";
 })
 export class ProductComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy {
   @Input('product') product!: Product;
+
+  @Output() addCard = new EventEmitter<Product>();
 
 
   constructor() {
@@ -29,6 +41,10 @@ export class ProductComponent implements OnInit, OnChanges, AfterViewInit, OnDes
   ngOnChanges(changes: SimpleChanges): void {
     // before ngOnInit , before render - during
     console.log(`ngOnChanges cambios en inputs ${this.product} y changes ${changes}`)
+  }
+  addToCard(){
+    this.addCard.emit(this.product);
+
   }
 
   ngOnDestroy(): void {

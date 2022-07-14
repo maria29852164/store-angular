@@ -2,12 +2,13 @@
   <div class="card-body">
 
 
-    <app-img [img]="product.img"></app-img>
+    <app-img [img]="product.image"></app-img>
 
   </div>
   <div class="card-title">
     <div class="product-content">
-      <h3>{{product.name}}</h3>
+      <h3>{{product.title}}</h3>
+      <br>
       <p>Price: {{product.price}}$</p>
 
     </div>
@@ -18,6 +19,10 @@
       <p >
         {{product.description}}
       </p>
+      <div>
+        <button class="btn-product" (click)="addToCard()">Add Card</button>
+
+      </div>
     </div>
 
 
