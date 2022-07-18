@@ -12,6 +12,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {ReversePipe} from "./pipes/reverse.pipe";
 import { TimeAgoutPipe } from './pipes/time-agout.pipe';
 import { NumberCharacterPipe } from './pipes/number-character.pipe';
+import { HighlightDirective } from './directives/highlight.directive';
+import { AddCardComponent } from './components/add-card/add-card.component';
 
 @NgModule({
     declarations: [
@@ -22,7 +24,9 @@ import { NumberCharacterPipe } from './pipes/number-character.pipe';
         NavComponent,
         ReversePipe,
         TimeAgoutPipe,
-        NumberCharacterPipe
+        NumberCharacterPipe,
+        HighlightDirective,
+        AddCardComponent
     ],
     imports: [
         BrowserModule,
